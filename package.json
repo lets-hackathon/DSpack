@@ -1,0 +1,28 @@
+{
+  "name": "dspack",
+  "version": "1.0.0",
+  "description": "A package providing with various data structures and supporting helper functions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lets-hackathon/DSpack.git"
+  },
+  "keywords": [
+    "data-structure",
+    "data",
+    "structure",
+    "ds",
+    "dspack"
+  ],
+  "author": "Kanishk Gupta <kanishkgupta2000@gmail.com> (https://kanishk-gupta.herokuapp.com)",
+  "contributors": ["Akash Dhiman <akashd.co18@nsut.ac.in"],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lets-hackathon/DSpack/issues"
+  },
+  "homepage": "https://github.com/lets-hackathon/DSpack#readme"
+}
+
