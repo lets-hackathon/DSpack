@@ -1,7 +1,7 @@
-const ds=require('../index');
-const {Queue}=ds;
+const ds = require("../index");
+const { Queue } = ds;
 console.log("test for queue");
-var objq=Queue();
+var objq = Queue();
 objq.enqueue(4);
 objq.enqueue(3);
 objq.enqueue(2);
