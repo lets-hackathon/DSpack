@@ -18,11 +18,15 @@
     "dspack"
   ],
   "author": "Kanishk Gupta <kanishkgupta2000@gmail.com> (https://kanishk-gupta.herokuapp.com)",
-  "contributors": ["Akash Dhiman <akashd.co18@nsut.ac.in"],
+  "contributors": [
+    "Akash Dhiman <akashd.co18@nsut.ac.in"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/lets-hackathon/DSpack/issues"
   },
-  "homepage": "https://github.com/lets-hackathon/DSpack#readme"
+  "homepage": "https://github.com/lets-hackathon/DSpack#readme",
+  "dependencies": {
+    "encap": "^1.1.0"
+  }
 }
-
