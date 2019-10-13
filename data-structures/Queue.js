@@ -3,7 +3,7 @@
 const Queue=()=>
 { 
 	// Array is used to implement a Queue 	
-		_items = []; 
+		let _items = []; 
     // Functions to be implemented 
     return{
          // enqueue(item)
