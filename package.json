@@ -4,6 +4,8 @@
   "description": "A package providing with various data structures and supporting helper functions.",
   "main": "index.js",
   "scripts": {
+    "format": "prettier \"./**/*.js\" --write",
+    "lint": "eslint \"./**/*.js\" --quiet",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
