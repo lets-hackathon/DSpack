@@ -1,3 +1,4 @@
+
 // User defined class node 
 class Node { 
     // constructor 
@@ -10,16 +11,15 @@ class Node {
 
 
 // linkedlist class 
-const LinkedList=class{ 
-    constructor() 
-    { 
-        this.head = null; 
-        this.size = 0; 
-    } 
+const LinkedList=()=>{ 
+    
+        let _head = null; 
+        let _size = 0; 
   
     // functions to be implemented 
-    //add(element)
-add(element)
+	//add(element)
+	return {
+		add(element)
 { 
 	var node = new Node(element); 
 
@@ -28,10 +28,10 @@ add(element)
 
 	// if list is Empty add the 
 	// element and make it head 
-	if (this.head == null) 
-		this.head = node; 
+	if (_head == null) 
+		_head = node; 
 	else { 
-		current = this.head; 
+		current = _head; 
 
 		
 		while (current.next) { 
@@ -41,27 +41,27 @@ add(element)
 		// add node 
 		current.next = node; 
 	} 
-	this.size++; 
-} 
+	_size++; 
+},
 
 // insertAt(element,index) 
 insertAt(element, index){ 
-	if (index > 0 && index > this.size) 
+	if (index > 0 && index > _size) 
 		return false; 
 	else { 
 		// creates a new node 
 		var node = new Node(element); 
 		var curr, prev; 
 
-		curr = this.head; 
+		curr = _head; 
 
 		// add the element to the 
 		// first index 
 		if (index == 0) { 
-			node.next = head; 
-			this.head = node; 
+			node.next = _head; 
+			_head = node; 
 		} else { 
-			curr = this.head; 
+			curr = _head; 
 			var it = 0; 
 
 			while (it < index) { 
@@ -74,23 +74,23 @@ insertAt(element, index){
 			node.next = curr; 
 			prev.next = node; 
 		} 
-		this.size++; 
+		_size++; 
 	} 
-}
+},
    
 // removeFrom(index)
 removeFrom(index)
 { 
-	if (index > 0 && index > this.size) 
+	if (index > 0 && index > _size) 
 		return -1; 
 	else { 
 		var curr, prev, it = 0; 
-		curr = this.head; 
+		curr = _head; 
 		prev = curr; 
 
 		// deleting first element 
 		if (index === 0) { 
-			this.head = curr.next; 
+			_head = curr.next; 
 		} else { 
 			// iterate over the list to the 
 			// position to removce an element 
@@ -103,16 +103,16 @@ removeFrom(index)
 			// remove the element 
 			prev.next = curr.next; 
 		} 
-		this.size--; 
+		_size--; 
 
 		// return the remove element 
 		return curr.element; 
 	} 
-} 
+} ,
 
 removeElement(element) 
 { 
-	var current = this.head; 
+	var current = _head; 
 	var prev = null; 
 
 	// iterate over the list 
@@ -122,34 +122,34 @@ removeElement(element)
 		// and return true 
 		if (current.element === element) { 
 			if (prev == null) { 
-				this.head = current.next; 
+				_head = current.next; 
 			} else { 
 				prev.next = current.next; 
 			} 
-			this.size--; 
+			_size--; 
 			return current.element; 
 		} 
 		prev = current; 
 		current = current.next; 
 	} 
 	return -1; 
-}  
+}  ,
  
 
 // checks the list for empty 
 isEmpty() 
 { 
-	return this.size == 0; 
-} 
+	return _size == 0; 
+} ,
 // gives the size of the list 
 size_of_list() 
 { 
-	console.log(this.size); 
-} 
+	console.log(_size); 
+} ,
 // prints the list items 
 printList() 
 { 
-	var curr = this.head; 
+	var curr = _head; 
 	var str = ""; 
 	while (curr) { 
 		str += curr.element + " "; 
@@ -157,6 +157,8 @@ printList()
 	} 
 	console.log(str); 
 } 
+	}
+
     
 } 
 
